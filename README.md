@@ -1,4 +1,4 @@
-# Computação Gráfica - ANA
+# Computação Gráfica 
 ---
 
 ## Índice
