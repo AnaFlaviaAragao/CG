@@ -1,6 +1,13 @@
 Introdução á Computação Gráfica - Trabalho I
 ---
 
+Disciplina: [GDSCO0051] Introdução à Computação Gráfica - Turma 02.
+Professor: Christian Azambuja Pagot (email: christian@ci.ufpb.br).
+Alunas: Ana Flavia S. Aragão Moura; 20160164270
+        Thuane
+
+---
+
 ## Índice
 
 * [Introdução](#introdução)
