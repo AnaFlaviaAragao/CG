@@ -16,7 +16,7 @@ Alunas:
 ## Índice
 
 * [Introdução](#introdução)
-* [Setup].(#setup)
+* [Setup](#setup)
 * [Pixels](#pixels)
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
 * [Linhas](#linhas)
