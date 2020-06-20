@@ -1,4 +1,4 @@
-# Introdução a Computação Gráfica - Trabalho I
+Computação á Gráfica - Trabalho I
 ---
 
 ## Índice
