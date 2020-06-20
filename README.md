@@ -16,6 +16,7 @@ Alunas:
 ## Índice
 
 * [Introdução](#introdução)
+* [Setup].(#setup)
 * [Pixels](#pixels)
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
 * [Linhas](#linhas)
@@ -33,7 +34,18 @@ Este trabalho foi desenvolvido para a disciplina de Introdução à Computação
 
 Com o objetivo de nos familiarizar com os algoritmos de rasterização utilizados em computação gráfica. Aprendemos na prática como rasterizar pontos, linhas e triângulos através da rasterização das linhas.
 
+Simulando o acesso direto a memória de vídeo utilizando um framework, fornecido pelo professor, que simula o acesso à memória de vídeo. 
+
 ---
+### Setup
+
+Utilizamos o sistema operacional Linux distribuição Ubunto 2018. Uma compilação exige que os requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
+
+```sh
+$ make
+
+$ ./cgprog
+```
 
 ### Pixels
 
