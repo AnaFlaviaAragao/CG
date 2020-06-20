@@ -39,7 +39,7 @@ Simulando o acesso direto a memória de vídeo utilizando um framework, fornecid
 ---
 ### Setup
 
-Utilizamos o sistema operacional Linux distribuição Ubunto 2018. Uma compilação exige que os requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
+Utilizamos o sistema operacional Linux distribuição Ubunto 2018. Para a compilação exige  requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
 
 ```sh
 $ make
