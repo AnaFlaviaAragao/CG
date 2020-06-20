@@ -54,7 +54,7 @@ Além disso, temos capacidade de endereçar cada pixel (e cada canal de cor) no 
 
 <p align="center">
 	<br>
-	<img src="./images/Screenshot from 2019-07-14 11-49-37.png"/ width=720px height=400px>
+	<img src="./Images/Figura1.png"/ width=720px height=400px>
 	<h5 align="center">Figura 2 - Endereçamento de pixels no colour buffer</h5>
 	<br>
 </p>
@@ -90,7 +90,7 @@ void putPixel(Pixel p) {
 Obtivemos esses resultados:
 <p align="center">
 	<br>
-	<img src="./images/PutPixel.png"/ width=512px height=512px>
+	<img src="./images/Figura2.png"/ width=512px height=512px>
 	<h5 align="center">Figura 3 - Função putPixel()</h5>
 	<br>
 </p>
