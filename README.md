@@ -49,9 +49,9 @@ $ ./cgprog
 
 ### Pixels
 
-Os monitores da atualidade são compostos por uma malha de pixels, com X pixels de largura por Y pixels de altura, formando um espaço bidimensional. Entretanto, a disposição desses pixels na memória de vídeo se dá de forma linear, onde todos os pixels são armazenados de forma contínua no que chamamos de *colour buffer*. Este fato deve ser levado em consideração quando se trabalha com a manipulação de pixels.
+Os monitores da atualidade são compostos por uma malha de pixels, formando um espaço bidimensional. Porém, a disposição desses pixels na memória de vídeo se dá de forma linear, onde todos os pixels são armazenados de forma contínua no que chamamos de *colour buffer*.Assim, é necessário calcular um offset para que cada pixel da tela, dada sua posição (x,y) ocupe um único e distinto espaço em memória. Este fato deve ser levado em consideração quando se trabalha com a manipulação de pixels.
 
-A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel possui 4 componentes de cor: R para vermelho (RED), G para verde (GREEN), B para azul (BLUE) e A para transparência (ALPHA). Cada componente ocupa 1 byte do *colour buffer*, totalizando 4 bytes por pixel. Para facilitar o entendimento, vejamos o seguinte esquema:
+A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel possui 4 componentes de cor: R para vermelho (RED), G para verde (GREEN), B para azul (BLUE) e A para transparência (ALPHA). Cada componente ocupa 1 byte do *colour buffer*, totalizando 4 bytes por pixel. O esquema de Image Storage está exemplificado na imagem apresentada:
 
 
 
@@ -62,7 +62,7 @@ A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel poss
 	<br>
 </p>
 
-Além disso, temos capacidade de endereçar cada pixel (e cada canal de cor) no *colour buffer* da seguinte forma:
+Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buffer* da seguinte forma:
 
 <p align="center">
 	<br>
@@ -71,7 +71,7 @@ Além disso, temos capacidade de endereçar cada pixel (e cada canal de cor) no 
 	<br>
 </p>
 
-Com essas informações, foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
+Portanto, foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
 
 ```C++
 typedef struct Pixel {
@@ -102,7 +102,15 @@ void putPixel(Pixel p) {
 Obtivemos esses resultados:
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura2.png"/ width=512px height=512px>
+	<img src="./Imagens/Figura3.png"/ width=512px height=512px>
 	<h5 align="center">Figura 3 - Função putPixel()</h5>
 	<br>
 </p>
+
+### Algoritmo de Bresenham
+
+A etapa mais complicada do projeto foi a rasterização de linhas. Para isso, foi criada a função **drawLine()**, que recebe dois pixels como parâmetro, e desenha uma reta aproximada entre eles.
+
+Para essa função foi utilizado o algoritmo de Bresenham, muito utilizado na computação para rasterização de linhas. O algoritmo de Bresenham, de forma simplificada, busca aproximar uma reta (que sabemos que é contínua), para um universo discreto. Para isso, transforma-se a linha a ser desenhada em uma equação de reta, da forma y = mx + b.
+
+A cada incremento de x, y incrementa baseado na inclinação m. Isso, porém, quer dizer que y assumirá valores de pontos flutuante, o que dificulta a representação por meio de pixels. O algoritmo de Bresenham chega então na etapa de decisão: a cada vez que x muda, verifica-se se o valor de y equivalente está mais próximo do y atual, ou de y + 1. Após a decisão, o pixel escolhido é acendido. Isso pode ser visto de uma forma melhor na seguinte imagem: 
