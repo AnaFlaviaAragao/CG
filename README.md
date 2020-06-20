@@ -45,7 +45,7 @@ A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel poss
 
 <p align="center">
 	<br>
-	<img src="./images/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
 	<h5 align="center">Figura 1 - Disposição dos pixels na memória</h5>
 	<br>
 </p>
@@ -54,7 +54,7 @@ Além disso, temos capacidade de endereçar cada pixel (e cada canal de cor) no 
 
 <p align="center">
 	<br>
-	<img src="./images/Figura2.png"/ width=720px height=400px>
+	<img src="./Imagens/Figura2.png"/ width=720px height=400px>
 	<h5 align="center">Figura 2 - Endereçamento de pixels no colour buffer</h5>
 	<br>
 </p>
@@ -90,7 +90,7 @@ void putPixel(Pixel p) {
 Obtivemos esses resultados:
 <p align="center">
 	<br>
-	<img src="./images/Figura2.png"/ width=512px height=512px>
+	<img src="./Imagens/Figura2.png"/ width=512px height=512px>
 	<h5 align="center">Figura 3 - Função putPixel()</h5>
 	<br>
 </p>
