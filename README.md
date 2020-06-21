@@ -114,3 +114,20 @@ A etapa mais complicada do projeto foi a rasterização de linhas. Para isso, fo
 Para essa função foi utilizado o algoritmo de Bresenham, muito utilizado na computação para rasterização de linhas. O algoritmo de Bresenham, de forma simplificada, busca aproximar uma reta (que sabemos que é contínua), para um universo discreto. Para isso, transforma-se a linha a ser desenhada em uma equação de reta, da forma y = mx + b.
 
 A cada incremento de x, y incrementa baseado na inclinação m. Isso, porém, quer dizer que y assumirá valores de pontos flutuante, o que dificulta a representação por meio de pixels. O algoritmo de Bresenham chega então na etapa de decisão: a cada vez que x muda, verifica-se se o valor de y equivalente está mais próximo do y atual, ou de y + 1. Após a decisão, o pixel escolhido é acendido. Isso pode ser visto de uma forma melhor na seguinte imagem: 
+
+<p align="center">
+	<br>
+	<img src="./Imagens/Figura4.4.png"/ width=512px height=256px>
+	<h5 align="center">Figura 4 - Linha de Bresenham </h5>
+	<br>
+</p>
+
+Porém, da forma apresentada, o algoritmo funciona apenas para linhas no primeiro octante. Isso é, o octante em que o deslocamento em xe y são positivos, e a inclinação da reta está entre 0º e 45º graus. 
+
+<p align="center">
+	<br>
+	<img src="./Imagens/Figura5.png"/ width=512px height=512px>
+	<h5 align="center">Figura 5 - Octantes </h5>
+	<br>
+</p>
+
