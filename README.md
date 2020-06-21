@@ -24,7 +24,6 @@ Alunas:
 	* [Triângulos](#triângulos)
 * [Interpolação Linear de Cores](#interpolação-linear-de-cores)
 * [Conclusão](#conclusão)
-* [Contribuidores](#contribuidores)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
 ---
@@ -286,3 +285,15 @@ Como resultado, obtivemos:
 	<h5 align="center">Figura 8 - Função drawTriangle()</h5>
 	<br>
 </p>
+
+
+
+### Conclusão
+
+
+### Referências Bibliográficas
+
+* Notas de aula do Prof. Christian
+* [Bleeptrack - Bresenham Algorithmus](http://www.bleeptrack.de/tutorials/bresenham/)
+* [Bresenham's line algorithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+
