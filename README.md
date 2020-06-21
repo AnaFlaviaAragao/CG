@@ -20,7 +20,7 @@ Alunas:
 * [Pixels](#pixels)
 	* [Ponto](#ponto)
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
-	* [Linhas](#linha)
+	* [Linha](#linha)
 	* [Triângulos](#triângulos)
 * [Interpolação Linear de Cores](#interpolação-linear-de-cores)
 * [Conclusão](#conclusão)
