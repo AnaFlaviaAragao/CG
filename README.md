@@ -252,6 +252,9 @@ else {
 
 O primeiro if desenha linhas em que o deslocamento x é maior do que deslocamento y. Isso é, nos octantes 1, 4, 5, e 8. Por consequência, o else é responsável pelos octantes 2, 3, 6, e 7. Após a implementação, podemos verificar o resultado: 
 
+
+
+
 <p align="center">
 	<br>
 	<img src="./images/DrawLine sem interpolação.png"/ width=512px height=512px>
@@ -262,3 +265,23 @@ O primeiro if desenha linhas em que o deslocamento x é maior do que deslocament
 
 
 ### Triângulos
+
+DrawTriangle(...): Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices (x0,y0), (x1,y1) e (x2,y2) bem como as cores (RGBA) de cada um dos vértices. As cores dos pixels das arestas do triângulo devem ser obtidas através da interpolação linear das cores de seus vértices. Não é necessário o preenchimento do triângulo!
+
+Passada a implementação mais complicada do projeto, vamos tirar proveito do funcionamento da função drawLine() para desenvolver a função drawTriangle(). Esta função recebe como parâmentro 3 pixels que representam os vértices do triângulo. A função, então, rasteriza 3 linhas ligando os vértices:
+
+
+
+Como resultado, obtivemos:
+<p align="center">
+	<br>
+	<img src="./Imagens/Figura7.png"/ width=512px height=512px>
+	<h5 align="center">Figura 7 - Função drawTriangle()</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./images/triangulo1.png"/ width=512px height=512px>
+	<h5 align="center">Figura 8 - Função drawTriangle()</h5>
+	<br>
+</p>
