@@ -18,9 +18,10 @@ Alunas:
 * [Introdução](#introdução)
 * [Setup](#setup)
 * [Pixels](#pixels)
+	* [Ponto](#ponto)
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
-* [Linhas](#linhas)
-* [Triângulos](#triângulos)
+	* [Linhas](#linhas)
+	* [Triângulos](#triângulos)
 * [Interpolação Linear de Cores](#interpolação-linear-de-cores)
 * [Conclusão](#conclusão)
 * [Contribuidores](#contribuidores)
@@ -61,6 +62,8 @@ A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel poss
 	<h5 align="center">Figura 1 - Disposição dos pixels na memória</h5>
 	<br>
 </p>
+
+### Ponto
 
 Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buffer* da seguinte forma:
 
