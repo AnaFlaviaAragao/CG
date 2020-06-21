@@ -38,6 +38,9 @@ Com o objetivo de nos familiarizar com os algoritmos de rasterização utilizado
 Simulando o acesso direto a memória de vídeo utilizando um framework, fornecido pelo professor, que simula o acesso à memória de vídeo. 
 
 ---
+
+
+
 ### Setup
 
 Utilizamos o sistema operacional Linux distribuição Ubunto 2018. Para a compilação exige  requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
@@ -47,6 +50,8 @@ $ make
 
 $ ./cgprog
 ```
+
+
 
 ### Pixels
 
@@ -112,6 +117,8 @@ Obtivemos esses resultados:
 	<br>
 </p>
 
+
+
 ### Algoritmo de Bresenham
 
 A etapa mais complicada do projeto foi a rasterização de linhas. Para isso, foi criada a função **drawLine()**, que recebe dois pixels como parâmetro, e desenha uma reta aproximada entre eles.
@@ -136,3 +143,120 @@ Porém, da forma apresentada, o algoritmo funciona apenas para linhas no primeir
 	<br>
 </p>
 
+### Linha
+
+Para a implementação funcionar para qualquer reta, foi necessário generalizar o algoritmo. Além disso, retas horizontais e retas verticais foram implementados separadamente das retas inclinadas. O algoritmo foi implementado da seguinte forma: 
+
+```C++
+void drawLine(Pixel inicial, Pixel final){
+    int xi = inicial.x;
+    int xf = final.x;
+    int yi = inicial.y;
+    int yf = final.y;
+    int dx = abs(xf - xi);
+    int dy = abs(yf - yi);
+    int controle = 0;   //Controla se a direção menor vai crescer ou nao;
+    int incX = 0;
+    int incY = 0;
+
+    //Define se Y e X estão indo nas direções positivas ou negativas
+    if(xf > xi) incX = 1;
+    else incX = -1;
+
+    if(yf > yi) incY = 1;
+    else incY = -1;
+
+    putPixel(inicial);
+    Pixel linha = {inicial.x, inicial.y, inicial.red, inicial.green, inicial.blue, inicial.alpha};  //Esse pixel é o que se moverá e pintará a linha
+```
+
+Essa é a parte inicial da função, que vai definir em qual octante será desenhada linha, baseado nos pixels passados como parâmetro. Também é criado o pixel "linha", que será nosso pixel "ambulante". Isso é, será ele que percorrerá a linha, mudando de coordenadas, e pintando cada pixel individual.
+
+```C++
+    if(dx == 0){
+        if(yf > yi){    //linha pra baixo
+            while(linha.y != yf)
+            {
+
+                linha.y++;              
+                putPixel(linha);
+
+            }
+        }
+        else{           //linha pra cima
+            while(linha.y != yf)
+            {
+
+                linha.y--;               
+                putPixel(linha);
+
+            }
+        }
+
+    }
+    else if(dy == 0){
+        if(xf > xi){    //linha pra direita
+            while(linha.x != xf)
+            {
+
+                linha.x++;                
+                putPixel(linha);
+
+            }
+        }
+        else{           //linha pra esquerda
+            while(linha.x != xf)
+            {
+
+                linha.x--;                
+                putPixel(linha);
+
+            }
+        }
+    }
+``` 
+Essa parte ficou responsável por pintar linhas sem inclinação.
+```C++
+else {
+        if (dx >= dy) {
+
+            controle = dx / 2;
+            putPixel(inicial);
+            while (linha.x != xf) {
+                linha.x += incX;
+                controle = controle - dy;
+                if (controle < 0) {
+                    linha.y += incY;
+                    controle += dx;
+                }                
+                putPixel(linha);
+            }
+
+        } else {
+            controle = dy / 2;
+            putPixel(inicial);
+            while (linha.y != yf) {
+                linha.y += incY;
+                controle = controle - dx;
+                if (controle < 0) {
+                    linha.x += incX;
+                    controle += dy;
+                }                
+                putPixel(linha);
+            }
+
+        }
+```
+
+O primeiro if desenha linhas em que o deslocamento x é maior do que deslocamento y. Isso é, nos octantes 1, 4, 5, e 8. Por consequência, o else é responsável pelos octantes 2, 3, 6, e 7. Após a implementação, podemos verificar o resultado: 
+
+<p align="center">
+	<br>
+	<img src="./images/DrawLine sem interpolação.png"/ width=512px height=512px>
+	<h5 align="center">Figura 6 - Linhas rasterizadas </h5>
+	<br>
+</p>
+
+
+
+### Triângulos
