@@ -63,8 +63,6 @@ A maioria dos monitores no mercado utilizam o padrão RGBA, onde cada pixel poss
 	<br>
 </p>
 
-### Ponto
-
 Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buffer* da seguinte forma:
 
 <p align="center">
@@ -74,7 +72,11 @@ Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buff
 	<br>
 </p>
 
-Portanto, foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
+### Ponto
+
+PutPixel(...): Rasteriza um ponto na memória de vídeo recebendo como parâmetros as coordenadas (x,y) do pixel na tela e sua cor (RGBA).
+
+Foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
 
 ```C++
 typedef struct Pixel {
