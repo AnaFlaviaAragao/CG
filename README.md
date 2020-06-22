@@ -9,7 +9,7 @@ Alunas:
         
         Ana Flavia S. Aragão Moura; 20160164270
 
-        Thuane
+        Thuane Mikaella de França; 11325835
 
 ---
 
@@ -42,7 +42,7 @@ Simulando o acesso direto a memória de vídeo utilizando um framework, fornecid
 
 ### Setup
 
-Utilizamos o sistema operacional Linux distribuição Ubunto 2018. Para a compilação exige  requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
+Utilizamos o sistema operacional Linux distribuição Unbuntu 18.04.04 LTS. Para a compilação exige  requisitos do OpenGL e o GLUT (The OpenGL Toolkit) sejam armazenados. Após a instalação:
 
 ```sh
 $ make
