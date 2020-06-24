@@ -79,6 +79,8 @@ Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buff
 
 
 ```Desenvolvimento Função: PutPixel(...): Rasteriza um ponto na memória de vídeo recebendo como parâmetros as coordenadas (x,y) do pixel na tela e sua cor (RGBA).```
+
+
 O primeiro passo é conseguir rasterizar um pixel na tela, pois uma imagem é formada por um conjunto de pixels. Como alterações à memória de vídeo são restritas pelo sistema operacional, o acesso foi simulação pelo ponteiro FBptr, através do framework desenvolvido pelo Professor.
 
 Foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
@@ -113,6 +115,8 @@ void putPixel(tPixel ponto,tColor cor){
 }
 ```
 Obtivemos esses resultados:
+
+
 <p align="center">
 	<br>
 	<img src="./Imagens/ponto.jpeg"/ width=512px height=512px>
@@ -256,11 +260,10 @@ Essa é a parte inicial da função, que vai definir em qual octante será desen
 
 Após a implementação, podemos verificar o resultado: 
 
-
 <p align="center">
 	<br>
-	<img src="./Images/linhas.jpeg"/ width=512px height=512px>
-	<h5 align="center">Figura 6 - Linhas rasterizadas </h5>
+	<img src="./Imagens/linhas.jpeg"/ width=512px height=512px>
+	<h5 align="center">Figura 6 - Linhas rasterizadas</h5>
 	<br>
 </p>
 
