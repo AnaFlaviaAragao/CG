@@ -80,40 +80,42 @@ Portanto, podemos de endereçar cada pixel (e cada canal de cor) no *colour buff
 
 
 ```Desenvolvimento Função: PutPixel(...): Rasteriza um ponto na memória de vídeo recebendo como parâmetros as coordenadas (x,y) do pixel na tela e sua cor (RGBA).```
+O primeiro passo é conseguir rasterizar um pixel na tela, pois uma imagem é formada por um conjunto de pixels. Como alterações à memória de vídeo são restritas pelo sistema operacional, o acesso foi simulação pelo ponteiro FBptr, através do framework desenvolvido pelo Professor.
 
 Foi implementado um tipo estruturado **pixel** contendo todas as informações de coordenadas e cores dele:
 
 ```C++
-typedef struct Pixel {
-    int x;
-    int y;
+typedef struct {
+	int red;
+	int green;
+	int blue;
+	int alpha;
+} tColor;
 
-    double red;
-    double green;
-    double blue;
-    double alpha;
-} Pixel;
+typedef struct {
+	int x;
+	int y;
+} tPixel;
 ```
 
-A fim de desenhar um pixel na tela, foi criada a função **putPixel()** que recebe como parâmentro um pixel (com suas informações de cor e coordenadas) e rasteriza um ponto na tela. No framework desenvolvido pelo professor, existe um ponteiro **FBPtr** que aponta para a primeira posição do *colour buffer*, e isso possibilitou a implementação de tal função:
+A fim de desenhar um pixel na tela, foi criada a função **PutPixel()** que recebe como parâmentro um pixel (com suas informações coordenadas e  de cor) e rasteriza um ponto na tela. No framework desenvolvido pelo professor, existe um ponteiro **FBptr** que aponta para a primeira posição do *colour buffer*, e isso possibilitou a implementação de tal função:
 
 ``` C++
-void putPixel(Pixel p) {
-	
-	if(p.x>IMAGE_WIDTH || p.x<0 || p.y>IMAGE_HEIGHT || p.y<0) return; 
-	
-	int endereco = p.x*4 + p.y*4*IMAGE_WIDTH;
-	FBptr[endereco] = p.red;
-	FBptr[endereco + 1] = p.green;
-	FBptr[endereco + 2] = p.blue;
-	FBptr[endereco + 3] = p.alpha;
+void PutPixel(tPixel pixel, tColor color) {
+	int c = 4*pixel.x + 4*pixel.y*IMAGE_WIDTH;
+
+	FBptr[c] = color.red;
+	FBptr[c + 1] = color.green;
+	FBptr[c + 2] = color.blue;
+	FBptr[c + 3] = color.alpha;
+};
 }
 ```
 Obtivemos esses resultados:
 <p align="center">
 	<br>
 	<img src="./Imagens/Figura3.png"/ width=512px height=512px>
-	<h5 align="center">Figura 3 - Função putPixel()</h5>
+	<h5 align="center">Figura 3 - Função PutPixel()</h5>
 	<br>
 </p>
 
