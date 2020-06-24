@@ -284,18 +284,12 @@ void drawTriangle(tPixel p1,tPixel p2,tPixel p3,tColor c1,tColor c2,tColor c3){
 Como resultado, obtivemos:
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura7.png"/ width=512px height=512px>
+	<img src="./Imagens/triangulo.jpeg"/ width=512px height=512px>
 	<h5 align="center">Figura 7 - Função drawTriangle()</h5>
 	<br>
 </p>
 
 
-<p align="center">
-	<br>
-	<img src="./Images/triangulo.jpeg"/ width=512px height=512px>
-	<h5 align="center">Figura 8 - Função drawTriangle()</h5>
-	<br>
-</p>
 
 
 ### Conclusão
