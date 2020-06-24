@@ -183,7 +183,7 @@ void drawLine(tPixel pixel1,tPixel pixel2,tColor cor1,tColor cor2){
     putPixel(pixel1,cor1);
 ```
 
-Essa é a parte inicial da função, que vai definir em qual octante será desenhada linha, baseado nos pixels passados como parâmetro. Também é criado o pixel "linha", que será nosso pixel "ambulante". Isso é, será ele que percorrerá a linha, mudando de coordenadas, e pintando cada pixel individual .
+Essa é a parte inicial da função, que vai definir em qual octante será desenhada linha, baseado nos pixels passados como parâmetro. Também é criado o pixel "linha", que será nosso pixel "ambulante". Isso é, será ele que percorrerá a linha, mudando de coordenadas, e pintando cada pixel.
 
 ```C++
     if(dX >= inclinacao*dY){//m<=1
@@ -294,9 +294,9 @@ Como resultado, obtivemos:
 
 
 
-
 ### Conclusão
 
+Com este projeto podemos ter um panorama dos principios de introdução à computação grafica, podendo implementar de forma pratica o algoritmo de Bresenham. Tendo como maior dificuldade colocar em codificação a teoria, princialmente, na função drawLine. Como o algoritmo funciona por octantes, ou seja, existem 8 variações para a implementá-lo. Encontrar todas as relações matemáticas para todas as octantes, além de implementá-las foi algo bastante trabalhoso. No entando, foi uma otima experiencia. 
 
 ### Referências Bibliográficas
 
