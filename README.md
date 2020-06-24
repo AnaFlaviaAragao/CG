@@ -21,7 +21,7 @@ Alunas:
 	* [Ponto](#ponto)
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
 	* [Linha](#linha)
-	* [Triângulos](#triângulos)
+	* [Triângulo](#triângulo)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
@@ -269,7 +269,7 @@ Após a implementação, podemos verificar o resultado:
 
 
 
-### Triângulos
+### Triângulo
 
 ```Desenvolvimento Função: DrawTriangle(...): Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices (x0,y0), (x1,y1) e (x2,y2) bem como as cores (RGBA) de cada um dos vértices. As cores dos pixels das arestas do triângulo devem ser obtidas através da interpolação linear das cores de seus vértices. Não é necessário o preenchimento do triângulo!```
 
