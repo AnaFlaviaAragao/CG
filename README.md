@@ -22,7 +22,6 @@ Alunas:
 * [Algoritmo de Bresenham](#algoritmo-de-bresenham)
 	* [Linha](#linha)
 	* [Triângulos](#triângulos)
-* [Interpolação Linear de Cores](#interpolação-linear-de-cores)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
@@ -116,7 +115,7 @@ void putPixel(tPixel ponto,tColor cor){
 Obtivemos esses resultados:
 <p align="center">
 	<br>
-	<img src="./Imagens/ponto.png"/ width=512px height=512px>
+	<img src="./Imagens/ponto.jpeg"/ width=512px height=512px>
 	<h5 align="center">Figura 3 - Função PutPixel()</h5>
 	<br>
 </p>
@@ -260,7 +259,7 @@ Após a implementação, podemos verificar o resultado:
 
 <p align="center">
 	<br>
-	<img src="./images/DrawLine sem interpolação.png"/ width=512px height=512px>
+	<img src="./Images/linhas.jpeg"/ width=512px height=512px>
 	<h5 align="center">Figura 6 - Linhas rasterizadas </h5>
 	<br>
 </p>
@@ -293,80 +292,10 @@ Como resultado, obtivemos:
 
 <p align="center">
 	<br>
-	<img src="./images/triangulo1.png"/ width=512px height=512px>
+	<img src="./Images/triangulo.jpeg"/ width=512px height=512px>
 	<h5 align="center">Figura 8 - Função drawTriangle()</h5>
 	<br>
 </p>
-
-### Interpolação Linear de Cores
-
-Como última tarefa do projeto, fizemos a interpolação das cores desde o começo da linha até o fim. Com isso, uma transição gradual de cores acontece dependendo da distância entre seus pontos finais e iniciais.
-
-Primeiro, foi criada uma função chamada **setarDist()**, que recebe como parâmetro dois pixels (inicial e final) e um ponteiro para *struct Steps*, que por sua vez armazena a variação de cor de cada canal dos pixels. A função **setarDist()** é responsável por calcular a hipotenusa desses dois pixels (ou seja, a distância entre eles), a distância entre os componentes RGBA e definir o quanto cada cor irá incrementar/decrementar a cada pixel. Vejamos:
-
-```C++
-typedef struct Steps {
-
-    double redStep;
-    double greenStep;
-    double blueStep;
-    double alphaStep;
-
-} Steps;
-
-void setarDist(Pixel inicial, Pixel final, Steps *dist){
-    int dx = final.x - inicial.x;
-    int dy = final.y - inicial.y;
-
-    double hypo = sqrt(dx*dx + dy*dy);
-
-    //Define o quanto cada cor irá incrementar/decrementar a cada pixel
-    dist->redStep = (final.red - inicial.red)/hypo;
-    dist->greenStep = (final.green - inicial.green)/hypo;
-    dist->blueStep = (final.blue - inicial.blue)/hypo;
-    dist->alphaStep = (final.alpha - inicial.alpha)/hypo;
-}
-```
-
-Por fim, foi criada a função **interpolar()** que recebe como parâmetro um ponteiro para o pixel inicial que será acendido na tela e todas as suas informações de distância contidas em *Steps*. Nessa função, é realizado o cálculo para se obter os novos valores RGBA, baseados na distância que falta para chegar nos valores RGBA do pixel final. Cada ponto a ser gerado na linha vai possuir valores de cor mais próximos do valor final, resultando numa mudança gradual da cor da linha.
-```C++
-void interpolar(Pixel *inicial, Steps dist){
-    inicial->red += dist.redStep;
-    inicial->green += dist.greenStep;
-    inicial->blue += dist.blueStep;
-    inicial->alpha += dist.alphaStep;
-}
-```
-
-Após isso, temos que implementar a interpolação na função **drawLine()**. De começo, temos que setar os incrementos de cores a cada pixel. Isso é feito logo antes de se colocar o pixel inicial:
-
-```C++
-...
-Steps steps;
-setarDist(inicial,final,&steps);
-putPixel(inicial);
-...
-```
- 
-Esses cálculos serão sempre realizados antes da impressão do pixel na tela, portanto, sempre antes da chamada **putPixel()**.
-
-```C++
-...
-interpolar(&linha,steps);
-putPixel(linha);
-...
-```
-
-Esses são os resultados:
-
-
-<p align="center">
-	<br>
-	<img src="./Imagens/i2.png"/ width=512px height=512px>
-	<h5 align="center">Figura 10 - Função interpolar()</h5>
-	<br>
-</p>
-
 
 
 ### Conclusão
