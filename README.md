@@ -98,23 +98,25 @@ typedef struct {
 } tPixel;
 ```
 
-A fim de desenhar um pixel na tela, foi criada a função **PutPixel()** que recebe como parâmentro um pixel (com suas informações coordenadas e  de cor) e rasteriza um ponto na tela. No framework desenvolvido pelo professor, existe um ponteiro **FBptr** que aponta para a primeira posição do *colour buffer*, e isso possibilitou a implementação de tal função:
+A fim de desenhar um pixel na tela, foi criada a função **putPixel()** que recebe como parâmentro um pixel (com suas informações coordenadas e de cor) e rasteriza um ponto na tela. No framework desenvolvido pelo professor, existe um ponteiro **FBptr** que aponta para a primeira posição do *colour buffer*, e isso possibilitou a implementação de tal função:
 
 ``` C++
-void PutPixel(tPixel pixel, tColor color) {
-	int c = 4*pixel.x + 4*pixel.y*IMAGE_WIDTH;
+void putPixel(tPixel ponto,tColor cor){
+     int pos = 0;
+     if (ponto.posx >= 0 && ponto.posx <=IMAGE_WIDTH &&ponto.posy >=0 && ponto.posy <= IMAGE_HEIGHT){
 
-	FBptr[c] = color.red;
-	FBptr[c + 1] = color.green;
-	FBptr[c + 2] = color.blue;
-	FBptr[c + 3] = color.alpha;
-};
+    		pos = (IMAGE_WIDTH*ponto.posy + ponto.posx)*4;
+    		FBptr[pos]   = cor.R;
+    		FBptr[pos+1] = cor.B;
+    		FBptr[pos+2] = cor.G;
+    		FBptr[pos+3] = cor.A;
+    }
 }
 ```
 Obtivemos esses resultados:
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura3.png"/ width=512px height=512px>
+	<img src="./Imagens/ponto.png"/ width=512px height=512px>
 	<h5 align="center">Figura 3 - Função PutPixel()</h5>
 	<br>
 </p>
@@ -149,112 +151,111 @@ Porém, da forma apresentada, o algoritmo funciona apenas para linhas no primeir
 
 ```Desenvolvimento Função: DrawLine(...): Rasteriza uma linha na tela, recebendo como parâmetros as coordenadas dos seus vértices inicial e final (representados respectivamente pelas tuplas (x0,y0) e (x1,y1)) e as cores (no formato RGBA) de cada vértice. As cores dos pixels ao longo da linha rasterizada devem ser obtidas por meio de interpolação linear das cores dos vértices. ```
 
-Para a implementação funcionar para qualquer reta, foi necessário generalizar o algoritmo. Além disso, retas horizontais e retas verticais foram implementados separadamente das retas inclinadas. O algoritmo foi implementado da seguinte forma: 
+Para a implementação funcionar para qualquer reta, foi necessário generalizar o algoritmo. O primeiro if desenha linhas em que o deslocamento x é maior do que deslocamento y. Isso é, nos octantes 1, 4, 5, e 8. Por consequência, o else é responsável pelos octantes 2, 3, 6, e 7. O algoritmo foi implementado da seguinte forma: 
 
 ```C++
-void drawLine(Pixel inicial, Pixel final){
-    int xi = inicial.x;
-    int xf = final.x;
-    int yi = inicial.y;
-    int yf = final.y;
-    int dx = abs(xf - xi);
-    int dy = abs(yf - yi);
-    int controle = 0;   //Controla se a direção menor vai crescer ou nao;
-    int incX = 0;
-    int incY = 0;
+void drawLine(tPixel pixel1,tPixel pixel2,tColor cor1,tColor cor2){
+    int oct;
+    int dX = (pixel2.posx - pixel1.posx);
+    int dY = (pixel2.posy - pixel1.posy);
+    float distP;//distancia parcial do pixel inicial até o pixel final
+    float distT = dist(pixel1,pixel2);//comprimento da reta
+    int inclinacao;//da reta
+    //Algoritmo de Braseham pra todos os octantes
+    //
+    if(dX<0)
+    {
+        drawLine(pixel2,pixel1,cor2,cor1);
+        return;
+    }
+    if(dY<0)
+        inclinacao = -1;
+    else
+        inclinacao = 1;
 
-    //Define se Y e X estão indo nas direções positivas ou negativas
-    if(xf > xi) incX = 1;
-    else incX = -1;
+    int incE, incNE, d;//constantes de Braseham's
+    tPixel pixel = pixel1;
+    tColor cor = cor1;
 
-    if(yf > yi) incY = 1;
-    else incY = -1;
-
-    putPixel(inicial);
-    Pixel linha = {inicial.x, inicial.y, inicial.red, inicial.green, inicial.blue, inicial.alpha};  //Esse pixel é o que se moverá e pintará a linha
+    putPixel(pixel1,cor1);
 ```
 
-Essa é a parte inicial da função, que vai definir em qual octante será desenhada linha, baseado nos pixels passados como parâmetro. Também é criado o pixel "linha", que será nosso pixel "ambulante". Isso é, será ele que percorrerá a linha, mudando de coordenadas, e pintando cada pixel individual.
+Essa é a parte inicial da função, que vai definir em qual octante será desenhada linha, baseado nos pixels passados como parâmetro. Também é criado o pixel "linha", que será nosso pixel "ambulante". Isso é, será ele que percorrerá a linha, mudando de coordenadas, e pintando cada pixel individual .
 
 ```C++
-    if(dx == 0){
-        if(yf > yi){    //linha pra baixo
-            while(linha.y != yf)
-            {
-
-                linha.y++;              
-                putPixel(linha);
-
+    if(dX >= inclinacao*dY){//m<=1
+        if(dY<0){
+            d = 2*dY+dX;
+            while(pixel.posx<pixel2.posx){
+                if(d<0){
+                    d += 2*(dY+dX);
+                    pixel.posx++;
+                    pixel.posy--;
+                }
+                else{
+                    d+=2*dY;
+                    pixel.posx++;
+                }
+                distP = dist(pixel,pixel2);
+                cor = interpolColor(distP/distT,cor1,cor2);
+                putPixel(pixel,cor);
             }
         }
-        else{           //linha pra cima
-            while(linha.y != yf)
-            {
-
-                linha.y--;               
-                putPixel(linha);
-
+        else{
+            d=2*dY-dX;
+            while(pixel.posx<pixel2.posx){
+                if(d<0){
+                    d+=2*dY;
+                    pixel.posx++;
+                }
+                else{
+                    d+=2*(dY-dX);
+                    pixel.posx++;
+                    pixel.posy++;
+                }distP = dist(pixel,pixel2);
+                cor = interpolColor(distP/distT,cor1,cor2);
+                putPixel(pixel,cor);
             }
         }
-
-    }
-    else if(dy == 0){
-        if(xf > xi){    //linha pra direita
-            while(linha.x != xf)
-            {
-
-                linha.x++;                
-                putPixel(linha);
-
+    } else{ //m>1
+        if(dY<0){
+            d=dY+2*dX;
+            while(pixel.posy > pixel2.posy){
+                if(d<0){
+                    d += 2*dX;
+                    pixel.posy--;
+                }
+                else{
+                    d+=2*(dY+dX);
+                    pixel.posx++;
+                    pixel.posy--;
+                }
+                distP = dist(pixel,pixel2);
+                cor = interpolColor(distP/distT,cor1,cor2);
+                putPixel(pixel,cor);
+            } }
+        else{
+            d=dY-2*dX;
+            while(pixel.posy<pixel2.posy){
+                if(d<0){
+                    d+=2*(dY-dX);
+                    pixel.posx++;
+                    pixel.posy++;
+                }
+                else{
+                    d+=-2*dX;
+                    pixel.posy++;
+                }
+                distP = dist(pixel,pixel2);
+                cor = interpolColor(distP/distT,cor1,cor2);
+                putPixel(pixel,cor); }
             }
         }
-        else{           //linha pra esquerda
-            while(linha.x != xf)
-            {
-
-                linha.x--;                
-                putPixel(linha);
-
-            }
-        }
-    }
+    putPixel(pixel2,cor2);
+}
 ``` 
-Essa parte ficou responsável por pintar linhas sem inclinação.
-```C++
-else {
-        if (dx >= dy) {
 
-            controle = dx / 2;
-            putPixel(inicial);
-            while (linha.x != xf) {
-                linha.x += incX;
-                controle = controle - dy;
-                if (controle < 0) {
-                    linha.y += incY;
-                    controle += dx;
-                }                
-                putPixel(linha);
-            }
-
-        } else {
-            controle = dy / 2;
-            putPixel(inicial);
-            while (linha.y != yf) {
-                linha.y += incY;
-                controle = controle - dx;
-                if (controle < 0) {
-                    linha.x += incX;
-                    controle += dy;
-                }                
-                putPixel(linha);
-            }
-
-        }
-```
-
-O primeiro if desenha linhas em que o deslocamento x é maior do que deslocamento y. Isso é, nos octantes 1, 4, 5, e 8. Por consequência, o else é responsável pelos octantes 2, 3, 6, e 7. Após a implementação, podemos verificar o resultado: 
-
-
+Após a implementação, podemos verificar o resultado: 
 
 
 <p align="center">
@@ -270,9 +271,16 @@ O primeiro if desenha linhas em que o deslocamento x é maior do que deslocament
 
 ```Desenvolvimento Função: DrawTriangle(...): Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices (x0,y0), (x1,y1) e (x2,y2) bem como as cores (RGBA) de cada um dos vértices. As cores dos pixels das arestas do triângulo devem ser obtidas através da interpolação linear das cores de seus vértices. Não é necessário o preenchimento do triângulo!```
 
-Passada a implementação mais complicada do projeto, vamos tirar proveito do funcionamento da função drawLine() para desenvolver a função drawTriangle(). Esta função recebe como parâmentro 3 pixels que representam os vértices do triângulo. A função, então, rasteriza 3 linhas ligando os vértices:
+Utilizamos o funcionamento da função drawLine() para desenvolver a função drawTriangle(). É necessário apenas a passagem de coordenadas para o desenho de três linhas com alguns vértices coincidentes, que representam os vértices do triângulo. A função, então, rasteriza 3 linhas ligando os vértices:
 
+```C++
+void drawTriangle(tPixel p1,tPixel p2,tPixel p3,tColor c1,tColor c2,tColor c3){
+    drawLine(p1,p2,c1,c2);
+    drawLine(p2,p3,c2,c3);
+    drawLine(p3,p1,c3,c1);
 
+}
+```
 
 Como resultado, obtivemos:
 <p align="center">
@@ -281,6 +289,8 @@ Como resultado, obtivemos:
 	<h5 align="center">Figura 7 - Função drawTriangle()</h5>
 	<br>
 </p>
+
+
 <p align="center">
 	<br>
 	<img src="./images/triangulo1.png"/ width=512px height=512px>
@@ -348,12 +358,7 @@ putPixel(linha);
 ```
 
 Esses são os resultados:
-<p align="center">
-	<br>
-	<img src="./Imagens/i1.png"/ width=512px height=512px>
-	<h5 align="center">Figura 9 - Função interpolar()</h5>
-	<br>
-</p>
+
 
 <p align="center">
 	<br>
