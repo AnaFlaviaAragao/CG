@@ -94,7 +94,7 @@ Nesta atividade prática, pudemos setar corretamente as configurações necessar
 
 principio tivemos tivemos dificuldade pois, o programa não estava aparecendo a janela OpenGL, mesmo usando o OpenGL 4.0. Depois 
 
-de muitas tentativas, finalmente conseguimos sendo o ponto de partida para outros projetos usando o OpenGL New.
+de muitas tentativas finalmente conseguimos, sendo o ponto de partida para outros projetos usando o OpenGL New.
 
 
 ### Referências Bibliográficas
