@@ -56,15 +56,29 @@ $ ./cgprog
 ### Desenvolvimento
 
 
-A principio fizemos o download do programa OpenGL New disponiilizado no GitHub so professor. Após o download, foi feito a compilação e o programa foi executado. Durante a compilação alguns
+A principio fizemos o download do programa OpenGL New disponiilizado no GitHub so professor. Após o download, foi feito a compilação e o programa foi executado. Durante a compilação alguns warnings apareceram na tela.
 
-warnings apareceram na tela. Uma vez compilado, ao ser executado, o programa apresentar uma janela contendo um triangulo colorido, como ilustra a Figura 1:
+Na nossa primeira tentativa o triangulo apraceu completamente branco. Como mostrado na Figura 1:
+
+
+
+<p align="center">
+	<br>
+	<img src="./Imagens/TrianguloBranco.png"/ width=720px height=400px>
+	<h5 align="center">Figura 1 - Janela OpenGL criada durante a execução do programa com erro</h5>
+	<br>
+</p>
+
+
+
+
+Uma vez compilado, ao ser executado, o programa apresentar uma janela contendo um triangulo colorido, como ilustra a Figura 2:
 
 
 <p align="center">
 	<br>
 	<img src="./Imagens/TrianguloColorido.png"/ width=720px height=400px>
-	<h5 align="center">Figura 1 - Janela OpenGL criada durante a execução do programa</h5>
+	<h5 align="center">Figura 2 - Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
 
