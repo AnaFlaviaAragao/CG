@@ -75,8 +75,14 @@ Podemos obeservar que o programa foi executado com sucesso, logo o objetivo foi 
 
 ### Conclusão
 
+Nesta atividade prática, pudemos setar corretamente as configurações necessarias, para que o programa executasse com exito. A principio tivemos tivemos dificuldade 
+
+pois, o programa não estava aparecendo a janela OpenGL, mesmo usando o OpenGL 4.0. Depois de muitas tentativas, finalmente conseguimos sendo o ponto de partida para 
+
+outros projetos usando o OpenGL New.
 
 
 ### Referências Bibliográficas
+
 
 * Notas de aula do Prof. Christian
