@@ -102,7 +102,7 @@ Podemos obeservar que o programa foi executado com sucesso, logo o objetivo foi 
 
 Nesta atividade prática, pudemos setar corretamente as configurações necessarias, para que o programa executasse com exito.  A
 
-principio tivemos tivemos dificuldade pois, o programa não estava aparecendo a janela OpenGL, mesmo usando o OpenGL 4.0. Depois 
+principio tivemos tivemos dificuldade pois, o programa não estava aparecendo a janela OpenGL, mesmo usando o OpenGL 4.5. Depois 
 
 de muitas tentativas percebemos que o programa só executava com exito utilizando a versão especifica 3.3 do OpenGl e finalmente 
 
