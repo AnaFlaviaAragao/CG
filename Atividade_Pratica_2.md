@@ -64,7 +64,7 @@ Na nossa primeira tentativa o triangulo apraceu completamente branco. Como mostr
 
 <p align="center">
 	<br>
-	<img src="./Imagens/TrianguloBranco.png"/ width=720px height=400px>
+	<img src="./Imagens/triangulob.jpeg"/ width=720px height=400px>
 	<h5 align="center">Figura 1 - Janela OpenGL criada durante a execução do programa com erro</h5>
 	<br>
 </p>
