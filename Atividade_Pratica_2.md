@@ -18,7 +18,7 @@ Alunas:
 
 * [Introdução](#introdução)
 * [Setup](#setup)
-* [Desenvolvimento](#adesenvolvimento)
+* [Desenvolvimento](#desenvolvimento)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
