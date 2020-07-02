@@ -56,9 +56,9 @@ $ ./cgprog
 ### Desenvolvimento
 
 
-A principio fizemos o download do programa OpenGL New disponiilizado no GitHub so professor. Após o download, foi feito a compilação e o programa foi executado. Durante a compilação alguns warnings apareceram na tela.
+A principio fizemos o download do programa OpenGL New disponibilizado no GitHub do professor. Após o download, foi feito a compilação e o programa foi executado. Durante a compilação alguns warnings apareceram na tela.
 
-Na nossa primeira tentativa o triangulo apraceu completamente branco. Como mostrado na Figura 1:
+Na nossa primeira tentativa o triangulo aparceu completamente branco. Como mostrado na Figura 1:
 
 
 
@@ -72,7 +72,7 @@ Na nossa primeira tentativa o triangulo apraceu completamente branco. Como mostr
 
 
 
-Dado essa problematica, pesquisamos e executamos um Export no terminal, pcom essa raviavel de ambiente para forçar a versão do mesmo utilizada ser a 3.3:
+Dado essa problematica, pesquisamos e executamos um Export no terminal, com essa váriavel de ambiente para forçar a versão do mesmo utilizada ser a 3.3:
 
 ```sh
 $ export MESA_GL_VERSION_OVERRIDE=3.3
