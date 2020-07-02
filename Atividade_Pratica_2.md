@@ -29,9 +29,9 @@ Alunas:
 
 Este trabalho foi desenvolvido para a disciplina de Introdução à Computação Gráfica, ministrada pelo Prof. Dr. Christian Azambuja Pagot na Universidade Federal da Paraíba, UFPB. 
 
-Com a finalidade de verificar se o ambiente de desenvolvimento em OpenGL 3.3 está corretamente configurado nos computadores de todos os aluno da disciplina, bem como familizarizar 
+Com a finalidade de verificar se o ambiente de desenvolvimento em OpenGL 3.3 está corretamente configurado nos computadores de todos os aluno da disciplina, bem como 
 
-os alunos com a estrutura de um programa OpenGL moderno utilizando o framewwork disponibilizado pelo professor.
+familizarizar os alunos com a estrutura de um programa OpenGL moderno utilizando o framewwork disponibilizado pelo professor.
 
 
 
