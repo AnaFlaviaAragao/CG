@@ -75,9 +75,9 @@ Na nossa primeira tentativa o triangulo aparceu completamente branco. Como mostr
 Dado essa problematica, pesquisamos e executamos um Export no terminal, com essa váriavel de ambiente para forçar a versão do mesmo utilizada ser a 3.3:
 
 ```sh
-$ export MESA_GL_VERSION_OVERRIDE=3.3
-
 $ make
+
+$ export MESA_GL_VERSION_OVERRIDE=3.3
 
 $ ./cgprog
 ```
