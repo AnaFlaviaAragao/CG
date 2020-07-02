@@ -1,5 +1,5 @@
 
-Introdução á Computação Gráfica - Trabalho II
+Introdução á Computação Gráfica - Atividade Prática II
 ---
 
 Disciplina: [GDSCO0051] Introdução à Computação Gráfica - Turma 02.
@@ -67,7 +67,7 @@ warnings apareceram na tela. Uma vez compilado, ao ser executado, o programa apr
 </p>
 
 
-Podemos obeservar que o programa foi executado com sucesso, logo oobjetivo foi satisfeito.
+Podemos obeservar que o programa foi executado com sucesso, logo o objetivo foi satisfeito.
 
 
 
