@@ -75,9 +75,9 @@ Na nossa primeira tentativa o triangulo aparceu completamente branco. Como mostr
 Dado essa problematica, pesquisamos e executamos um Export no terminal, com essa váriavel de ambiente para forçar a versão do mesmo utilizada ser a 3.3:
 
 ```sh
-$ make
-
 $ export MESA_GL_VERSION_OVERRIDE=3.3
+
+$ make
 
 $ ./cgprog
 ```
@@ -87,7 +87,7 @@ Uma vez compilado, ao ser executado, o programa apresentar uma janela contendo u
 
 <p align="center">
 	<br>
-	<img src="./Imagens/trianguloc.png"/ width=720px height=400px>
+	<img src="./Imagens/trianguloc.jpeg"/ width=720px height=400px>
 	<h5 align="center">Figura 2 - Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
