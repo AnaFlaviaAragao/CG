@@ -104,7 +104,7 @@ Nesta atividade prática, pudemos setar corretamente as configurações necessar
 
 principio tivemos tivemos dificuldade pois, o programa não estava aparecendo a janela OpenGL, mesmo usando o OpenGL 4.0. Depois 
 
-de muitas tentativas percebemos que o programa só executava com exito usando a versão especifica 3.3 do OpenGl e finalmente 
+de muitas tentativas percebemos que o programa só executava com exito utilizando a versão especifica 3.3 do OpenGl e finalmente 
 
 conseguimos executar, sendo assim o ponto de partida para outros projetos utilizando o OpenGL New.
 
