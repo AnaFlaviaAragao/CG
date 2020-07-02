@@ -33,7 +33,7 @@ Universidade Federal da Paraíba, UFPB. Com a finalidade de verificar se o ambie
 
 configurado nos computadores de todos os aluno da disciplina, bem como familizarizar os alunos com a estrutura de um programa OpenGL 
 
-moderno utilizando o framewwork disponibilizado pelo professor.
+moderno utilizando o framework disponibilizado pelo professor.
 
 
 
