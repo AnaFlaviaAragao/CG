@@ -77,7 +77,7 @@ Uma vez compilado, ao ser executado, o programa apresentar uma janela contendo u
 
 <p align="center">
 	<br>
-	<img src="./Imagens/TrianguloColorido.png"/ width=720px height=400px>
+	<img src="./Imagens/triangulob.png"/ width=720px height=400px>
 	<h5 align="center">Figura 2 - Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
