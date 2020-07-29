@@ -152,14 +152,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.4.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Model,Translações em (x, y, z) = (1,0,0).</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.5.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Translações em (x, y, z) = (1,0,0).</h5>
 	<br>
 </p>
