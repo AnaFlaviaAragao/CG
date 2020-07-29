@@ -225,7 +225,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
   <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=500px>
+	<img src="./Imagens/pratica11.png"/ width=720px height=500px>
 	<h5 align="center">Figure x: matrizes MModel,MView e MProjection .</h5>
 	<br>
 </p>
