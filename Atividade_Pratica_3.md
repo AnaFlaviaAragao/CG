@@ -24,11 +24,11 @@ Alunas:
   * [Camera Space](#camera-space)
 * [Compilação e Execucução do Código Template](#compilação-e-execucução-do-código-template)
 * [A Atividade](#a-atividade)
-	* [Exercício 1:  Escala](#exercício-1:-escala)
-	* [Exercício 2:  Translação](#texercício-2:-translação)
-  	* [Exercício 3:  Projeção Perspectiva](#exercício-3:-projeção-perspectiva)
-  	* [Exercício 4:  Posição da Câmera](#exercício-4:-posição-da-camêra)
-  	* [Exercício 5:  Transformações Livres](#exercício-4:-posição-da-camêra)
+	* [Exercício 1: Escala](#exercício-1:-escala)
+	* [Exercício 2: Translação](#texercício-2:-translação)
+  	* [Exercício 3: Projeção Perspectiva](#exercício-3:-projeção-perspectiva)
+  	* [Exercício 4: Posição da Câmera](#exercício-4:-posição-da-camêra)
+  	* [Exercício 5: Transformações Livres](#exercício-4:-posição-da-camêra)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
@@ -130,14 +130,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.1.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Model, equivalente a escala (x,y,z) = (1/3,3/2,1).</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.2.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Escala (x,y,z) = (1/3,3/2,1).</h5>
 	<br>
 </p>
