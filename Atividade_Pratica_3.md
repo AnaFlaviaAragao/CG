@@ -130,14 +130,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.2.png"/ width=720px height=500px>
+	<img src="./Imagens/pratica3.2.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Model, equivalente a escala (x,y,z) = (1/3,3/2,1).</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.3.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica3.3.png"/ width=720px height=500px>
 	<h5 align="center">Figure x: Escala (x,y,z) = (1/3,3/2,1).</h5>
 	<br>
 </p>
@@ -152,14 +152,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.4.png"/ width=720px height=500px>
+	<img src="./Imagens/pratica3.4.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Model,Translações em (x, y, z) = (1,0,0).</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.5.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica3.5.png"/ width=720px height=500px>
 	<h5 align="center">Figure x: Translações em (x, y, z) = (1,0,0).</h5>
 	<br>
 </p>
@@ -172,14 +172,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/pratica.3.6.png"/ width=720px height=500px>
+	<img src="./Imagens/pratica.3.6.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Projection Parâmetro d=1/2.</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.7.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica3.7.png"/ width=720px height=500px>
 	<h5 align="center">Figure x: Modificação da Matriz Projection Parâmetro d=1/2.</h5>
 	<br>
 </p>
