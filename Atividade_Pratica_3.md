@@ -60,13 +60,11 @@ $ g++ -Wall -Wextra -Wpedantic -std=c++17 -O0 -g3 -DDEBUG main.cpp -lglut -lGLEW
 
 $ make
 ```
-Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executado, o programa deverá apresentar uma janela contendo dois triângulos coloridos, como ilustraa Figura 
-
-1. 
+Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executado, o programa deverá apresentar uma janela contendo dois triângulos coloridos, como ilustraa Figura 1. 
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Pratica3.1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.1.png"/ width=720px height=400px>
 	<h5 align="center">Figure 1: Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
