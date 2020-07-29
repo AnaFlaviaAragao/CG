@@ -81,7 +81,7 @@ Na figura 2, podemos observar todos os passos do pipeline gráfico.
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.2.png"/ width=720px height=400px>
 	<h5 align="center">Figure 2: Representação completa do pipeline gráfico</h5>
 	<br>
 </p>
@@ -100,7 +100,7 @@ muitas operações aritméticas, sendo assim,  representá-las na forma de matri
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.3.png"/ width=720px height=400px>
 	<h5 align="center">Figure 3: Representação completa do pipeline gráfico</h5>
 	<br>
 </p>
