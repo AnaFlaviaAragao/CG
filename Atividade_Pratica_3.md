@@ -137,7 +137,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.2.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.2.png"/ width=520px height=400px>
 	<h5 align="center">Figure x: Escala (x,y,z) = (1/3,3/2,1).</h5>
 	<br>
 </p>
