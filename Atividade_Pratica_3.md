@@ -172,14 +172,14 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica.3.6.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Codigo da Modificação da Matriz Projection Parâmetro d=1/2.</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/pratica3.7.png"/ width=720px height=400px>
 	<h5 align="center">Figure x: Modificação da Matriz Projection Parâmetro d=1/2.</h5>
 	<br>
 </p>
