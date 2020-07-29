@@ -109,11 +109,11 @@ muitas operações aritméticas, sendo assim,  representá-las na forma de matri
 
 ### World Space
 
-É feito no sistema de coordenadas mundiais (ou no espaço mundial).
+É feito no sistema de coordenadas mundiais (ou no espaço mundial) ou espço do universo. O espaço do universo é onde todos os objetos ficam reunidos, portanto dividem o mesmo sistema de coordenadas. É no espaço do universo que toma a cena é formada. Agora com a cena formada devemos registrar a cena através de uma câmera, dessa forma somos levas ao espaço da câmera.
 
 ### Camera Space
 
-Como apontar a câmera para a cena, câmera define um novo sistema de coordenadas: o Sistema de coordenadas da câmera (ou espaço da câmera).
+Como apontar a câmera para a cena, câmera define um novo sistema de coordenadas: o Sistema de coordenadas da câmera (ou espaço da câmera). Quando colocamos a câmera na cena temos que transformar todos os pontos do espaço do universo para um novo sistema de coordenadas, o sistema da câmera. Para criar esse novo sistema de coordenadas precisamos informar a posição da câmera (EYE) no espaço do universo, o vetor direção (AT), para onde a câmera aponta, e o vetor (UP), que é o vetor que aponta para parte superior da câmera. Com esse parâmetros podemos criar o sistema de coordenadas do espaço da câmera.
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -204,7 +204,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
   <p align="center">
 	<br>
-	<img src="./Imagens/pratica12.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica10.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Posição da camera = (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).</h5>
 	<br>
 </p>
@@ -233,6 +233,12 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 
 ### Conclusão 
 
+Nesta atividade podemos entender os passos do pipeline gráfico, e implementar de acordo com a orientaço do professor. A maior dificuldade neste trabalho esteve nos detalhes implementação das transformações, em implementar especificamente a atividade 4, relacionado a posição da camera. Tivemos que pesquisar sobre a utilização da biblioteca GLM - OpengGL Mathematics e ler a docuemntação com cautela para avançar nas atividades.
 
 
 ### Referências Bibliográficas
+
+Material de Aula do professor Christian Pagot
+GLM - OpenGL Mathematics
+Chapter 6 - Fundamentals of Computer Graphics - Peter Shirley
+
