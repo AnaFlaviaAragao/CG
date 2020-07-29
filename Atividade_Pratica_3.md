@@ -186,7 +186,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  
  
-  ### Exercício 4:  Posição da Câmera
+### Exercício 4:  Posição da Câmera
   
   Modificar a matriz MView
   
@@ -201,9 +201,9 @@ Utilizamos a dica do professor mais uma vez, assim para implementar a matriz 4x4
 Onde temos a posição da câmera: o ponto em relação à sua posição; Alvo da câmera: o ponto em que está olhando; Direção: a distância entre alvo e posição;Vetor UP: um vetor que representa o que seria procurar no Espaço Universo, que, neste caso, é considerado igual ao vetor unitário que representa o eixo y do Universo. 
 Após esse procedimento, é necessário construir as matrizes que formarão a View.
 
--Matriz B: Representa os pontos do sistema de coordenadas do Universo no novo sistema relacionado ao Espaço da câmera.
--Matriz T: Usado para converter todos os vértices com o ponto de posição para posicionar a câmera na origem.
--Visualização de matriz: para combinar essas matrizes e gerar a visualização de matriz, é necessário multiplicar apenas uma pela outra.
+ - Matriz B: Representa os pontos do sistema de coordenadas do Universo no novo sistema relacionado ao Espaço da câmera.
+ - Matriz T: Usado para converter todos os vértices com o ponto de posição para posicionar a câmera na origem.
+ - Visualização de matriz: para combinar essas matrizes e gerar a visualização de matriz, é necessário multiplicar apenas uma pela outra.
 
 Em outras palavras, utilizando como parametro as posiçoes da camera contruimos a matriz_B e sua matriz_T a tranposta de B. E obtemos o resultado multiplicando-as matrix_B * matrix_T, como podemos observar nas figura a baixo:
  
