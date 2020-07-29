@@ -232,3 +232,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
   
 
 ### Conclusão 
+
+
+
+### Referências Bibliográficas
