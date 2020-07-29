@@ -100,7 +100,7 @@ muitas operações aritméticas, sendo assim,  representá-las na forma de matri
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.3.png"/ width=720px height=400px>
+	<img src="./Imagens/praticaX.png"/ width=720px height=400px>
 	<h5 align="center">Figure 3: Representação completa do pipeline gráfico</h5>
 	<br>
 </p>
