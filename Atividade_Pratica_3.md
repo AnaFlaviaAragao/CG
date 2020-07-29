@@ -24,11 +24,11 @@ Alunas:
   * [Camera Space](#camera-space)
 * [Compilação e Execucução do Código Template](#compilação-e-execucução-do-código-template)
 * [A Atividade](#a-atividade)
-	* [Exercício 1:  Escala](#exercício-1:- escala)
-	* [Exercício 2:  Translação](#texercício-2:- translação)
-  * [Exercício 3:  Projeção Perspectiva](#exercício-3:- projeção-perspectiva)
-  * [Exercício 4:  Posição da Câmera](#exercício-4:- posição-da-camêra)
-  * [Exercício 5:  Transformações Livres](#exercício-4:- posição-da-camêra)
+	* [Exercício 1:  Escala](#exercício-1:-escala)
+	* [Exercício 2:  Translação](#texercício-2:-translação)
+  	* [Exercício 3:  Projeção Perspectiva](#exercício-3:-projeção-perspectiva)
+  	* [Exercício 4:  Posição da Câmera](#exercício-4:-posição-da-camêra)
+  	* [Exercício 5:  Transformações Livres](#exercício-4:-posição-da-camêra)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
 
@@ -66,7 +66,7 @@ Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executad
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/Pratica3.1.png"/ width=720px height=400px>
 	<h5 align="center">Figure 1: Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
