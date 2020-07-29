@@ -64,7 +64,7 @@ Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executad
 
 <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.1.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica3.1.png"/ width=720px height=400px>
 	<h5 align="center">Figure 1: Janela OpenGL criada durante a execução do programa</h5>
 	<br>
 </p>
