@@ -101,7 +101,7 @@ muitas operações aritméticas, sendo assim,  representá-las na forma de matri
 <p align="center">
 	<br>
 	<img src="./Imagens/pratica13.png"/ width=720px height=400px>
-	<h5 align="center">Figure 3: Representação completa do pipeline gráfico</h5>
+	<h5 align="center">Figure 3: Representação do Onject Space to Wold Spaceo</h5>
 	<br>
 </p>
 
@@ -246,6 +246,6 @@ Nesta atividade podemos entender os passos do pipeline gráfico, e implementar d
 ### Referências Bibliográficas
 
 Material de Aula do professor Christian Pagot
-GLM - OpenGL Mathematics
-Chapter 6 - Fundamentals of Computer Graphics - Peter Shirley
+GLM  OpenGL Mathematics
+Chapter 6  Fundamentals of Computer Graphics - Peter Shirley
 
