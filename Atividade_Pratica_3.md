@@ -193,17 +193,18 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
   Para a realização deste exercício, determinar inicialmente os vetores da base do espaço camera a partir das informaçoes constante Posição da camera = 
   (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).
   
- Apos isso construimos a matriz_B da base da camera e invertemos, calculando sua trasposta  matrix_T. Em seguida, vamos determinar a matriz_T que 
- translada a base da camera, e faz a sua origem coincidir com a do espaçodo universo.  Em seguida, os construir a matrix MView como o 
- produto das matrizes BT e T e entao aplicar a transformação da MView sobre os vertices dos triangulos.
  
- O vetor de direção da camera pode foi  obtido subtraindo-se a posiçao da camera do ponto para o qual ela está apontando.
+ - Primeiro criamos três vetores glm como parametros da camera em relação ao posição, up e apontando. Depois usamos o metodo analize para as três eixos de cameras. Pegando a dica do porfessor, O vetor de direção da camera  foi  obtido subtraindo-se a posiçao da camera do ponto para o qual ela está apontando.
+ 
+ Utilizamos a dica do professor mais uma vez, assim para implementar a matriz 4x4 na glm devemos primeiro  entao passa-lo como argumento para a função glm:: mat4, que enta o retornara uma matriz da glm do tipo glm::mat4.A pos isso construimos a matriz_B da base da camera e invertemos, calculando sua trasposta  matrix_T. Em seguida, vamos determinar a matriz_T que translada a base da camera, e faz a sua origem coincidir com a do espaçodo universo.  Em seguida, os construir a matrix MView como o roduto das matrizes BT e T e entao aplicar a transformação da MView sobre os vertices dos triangulos.
+ 
+ Em outras palavras, utilizando como parametro as posiçoes da camera contruimos a matriz_B e sua matriz_T a tranposta de B. E obtemos o resultado multiplicando-as matrix_B * matrix_T, como podemos observar nas figura a baixo:
  
  
-  
+ 
   <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.8.png"/ width=720px height=250px>
+	<img src="./Imagens/pratica10.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Posição da camera = (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).</h5>
 	<br>
 </p>
@@ -229,4 +230,5 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 	<br>
 </p>
   
-  
+
+### Conclusão 
