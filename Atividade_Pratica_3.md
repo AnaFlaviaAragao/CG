@@ -203,7 +203,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
   
   <p align="center">
 	<br>
-	<img src="./Imagens/pratica3.8.png"/ width=720px height=500px>
+	<img src="./Imagens/pratica3.8.png"/ width=720px height=250px>
 	<h5 align="center">Figure x: Codigo da Modificação da Posição da camera = (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).</h5>
 	<br>
 </p>
