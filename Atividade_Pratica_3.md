@@ -196,9 +196,16 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  - Primeiro criamos três vetores glm como parametros da camera em relação ao posição, up e apontando. Depois usamos o metodo analize para as três eixos de cameras. Pegando a dica do porfessor, O vetor de direção da camera  foi  obtido subtraindo-se a posiçao da camera do ponto para o qual ela está apontando.
  
- Utilizamos a dica do professor mais uma vez, assim para implementar a matriz 4x4 na glm devemos primeiro  entao passa-lo como argumento para a função glm:: mat4, que enta o retornara uma matriz da glm do tipo glm::mat4.A pos isso construimos a matriz_B da base da camera e invertemos, calculando sua trasposta  matrix_T. Em seguida, vamos determinar a matriz_T que translada a base da camera, e faz a sua origem coincidir com a do espaçodo universo.  Em seguida, os construir a matrix MView como o roduto das matrizes BT e T e entao aplicar a transformação da MView sobre os vertices dos triangulos.
+Utilizamos a dica do professor mais uma vez, assim para implementar a matriz 4x4 na glm devemos primeiro  entao passa-lo como argumento para a função glm:: mat4, que enta o retornara uma matriz da glm do tipo glm::mat4.A pos isso construimos a matriz_B da base da camera e invertemos, calculando sua trasposta  matrix_T. Em seguida, vamos determinar a matriz_T que translada a base da camera, e faz a sua origem coincidir com a do espaçodo universo.  Em seguida, os construir a matrix MView como o roduto das matrizes BT e T e entao aplicar a transformação da MView sobre os vertices dos triangulos.
  
- Em outras palavras, utilizando como parametro as posiçoes da camera contruimos a matriz_B e sua matriz_T a tranposta de B. E obtemos o resultado multiplicando-as matrix_B * matrix_T, como podemos observar nas figura a baixo:
+Onde temos a posição da câmera: o ponto em relação à sua posição; Alvo da câmera: o ponto em que está olhando; Direção: a distância entre alvo e posição;Vetor UP: um vetor que representa o que seria procurar no Espaço Universo, que, neste caso, é considerado igual ao vetor unitário que representa o eixo y do Universo. 
+Após esse procedimento, é necessário construir as matrizes que formarão a View.
+
+-Matriz B: Representa os pontos do sistema de coordenadas do Universo no novo sistema relacionado ao Espaço da câmera.
+-Matriz T: Usado para converter todos os vértices com o ponto de posição para posicionar a câmera na origem.
+-Visualização de matriz: para combinar essas matrizes e gerar a visualização de matriz, é necessário multiplicar apenas uma pela outra.
+
+Em outras palavras, utilizando como parametro as posiçoes da camera contruimos a matriz_B e sua matriz_T a tranposta de B. E obtemos o resultado multiplicando-as matrix_B * matrix_T, como podemos observar nas figura a baixo:
  
  
  
