@@ -23,7 +23,7 @@ Alunas:
 	* [Camera Space](#camera-space)
 * [A Atividade](#a-atividade)
 	* [Exercício 1 Escala](#exercício-1-escala)
-	* [Exercício 2 Translação](#texercício-2-translação)
+	* [Exercício 2 Translação](#exercício-2-translação)
 	* [Exercício 3 Projeção Perspectiva](#exercício-3-projeção-perspectiva)
 	* [Exercício 4 Posição da Câmera](#exercício-4-posição-da-camêra)
 	* [Exercício 5 Transformações Livres](#exercício-5-transformações-livres)
