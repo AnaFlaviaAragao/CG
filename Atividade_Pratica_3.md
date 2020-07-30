@@ -69,7 +69,8 @@ Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executad
 	<br>
 </p>
 
-** Os codigos dessa atividade estão na pasta "03_transformations". Para ter acesso, basta descomentar a atividade que queira executar.
+**Os codigos dessa atividade estão na pasta "03_transformations". Para ter acesso, basta descomentar a atividade que queira executar.**
+
 
 ### Pipeline Gráfico
 
@@ -245,7 +246,7 @@ Nesta atividade podemos entender os passos do pipeline gráfico, e implementar d
 
 ### Referências Bibliográficas
 
-Material de Aula do professor Christian Pagot
-GLM  OpenGL Mathematics
-Chapter 6  Fundamentals of Computer Graphics - Peter Shirley
+* Material de Aula do professor Christian Pagot
+* GLM  OpenGL Mathematics
+* Chapter 6  Fundamentals of Computer Graphics - Peter Shirley
 
