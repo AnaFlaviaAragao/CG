@@ -48,9 +48,7 @@ com auxílio da biblioteca glme sua execução  ocorrerá nos shaders do OpenGL.
 
 ### Setup
 
-Utilizamos o sistema operacional Linux distribuição Unbuntu 18.04.04 LTS. Para a compilação no OpenGL moderno exige como requisitos, a biblioteca GLM e a biblioteca GLEW, possa ser 
-
-compilado com sucesso. Esta atividade será realizada a partir de um código de modelo C ++ fornecido pelo professor, disponível no repositório do GitHub. Após a instalação:
+Utilizamos o sistema operacional Linux distribuição Unbuntu 18.04.04 LTS. Para a compilação no OpenGL moderno exige como requisitos, a biblioteca GLM e a biblioteca GLEW, possa ser compilado com sucesso. Esta atividade será realizada a partir de um código de modelo C ++ fornecido pelo professor, disponível no repositório do GitHub. Após a instalação:
 
 
 Uma vez que todas as depedencias estejam satisfeitas, pode-se passar para a compilação do código template. O comando de compilação em sistemas Linux deverá ser:
@@ -60,6 +58,9 @@ $ g++ -Wall -Wextra -Wpedantic -std=c++17 -O0 -g3 -DDEBUG main.cpp -lglut -lGLEW
 
 $ make
 ```
+
+**Os codigos dessa atividade estão na pasta "03_transformations". Para ter acesso, basta descomentar a atividade que queira executar.**
+
 Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executado, o programa deverá apresentar uma janela contendo dois triângulos coloridos, como ilustraa Figura 1. 
 
 <p align="center">
@@ -69,7 +70,6 @@ Uma vez compilado  alguns warnings poderao  aparecer  na  tela. Ao  ser executad
 	<br>
 </p>
 
-**Os codigos dessa atividade estão na pasta "03_transformations". Para ter acesso, basta descomentar a atividade que queira executar.**
 
 
 ### Pipeline Gráfico
