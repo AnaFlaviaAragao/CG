@@ -229,7 +229,7 @@ Foi feito modificações nas  matrizes MModel, MView e MProjection onde forma a 
   <p align="center">
 	<br>
 	<img src="./Imagens/pratica11.png"/ width=720px height=500px>
-	<h5 align="center">Figure x: matrizes MModel,MView e MProjection .</h5>
+	<h5 align="center">Figure x: matrizes MModel, MView e MProjection .</h5>
 	<br>
 </p>
   
