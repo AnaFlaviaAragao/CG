@@ -1,5 +1,4 @@
 Introdução á Computação Gráfica - Trabalho III
-
 Atividade Prática 3 - Implementação do Pipeline Gráfico
 
 ---
