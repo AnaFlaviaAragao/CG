@@ -1,6 +1,6 @@
 Introdução á Computação Gráfica - Trabalho III
+---
 Atividade Prática 3 - Implementação do Pipeline Gráfico
-
 ---
 
 Disciplina: [GDSCO0051] Introdução à Computação Gráfica - Turma 02.
