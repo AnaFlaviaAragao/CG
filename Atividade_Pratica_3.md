@@ -224,7 +224,7 @@ Em outras palavras, utilizando como parametro as posiçoes da camera contruimos 
  
  ### Exercício 5 Transformações Livres
  
-Foi feito modificações nas  matrizes MModel, MView e MProjection onde forma a gerarem uma cena diferente das geradas anteriormente. Ou seja, ajuste todas as posiçoes x setando para o valor 3 nas três matrizes do codigo modelo. Ouve transformaçoes nas três matrizes!
+Foi feito modificações nas  matrizes MModel, MView e MProjection onde forma a gerarem uma cena diferente das geradas anteriormente. Ou seja, ajuste todas as posiçoes x setando para o valor 3 nas três matrizes do codigo modelo. Sendo assim obtivemos transformaçoes nas três matrizes, e formamos esse lindo retangulo.
  
   <p align="center">
 	<br>
