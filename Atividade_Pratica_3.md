@@ -121,7 +121,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 
  Atividade consiste em se alterar, no programa template, os conteudos das matrizes MModel, MView e MProjectionde forma que o programa gere as imagens abaixo.
  
- ### Exercício 1  Escala 
+ ### Exercício 1 Escala 
  
  Escalonar significa redimensionar um objeto, ou seja, aumentar ou diminuir suas dimensões, deformá-lo ou até mesmo espelhá-lo. Modificamos a matriz Model, ou seja, 
  modificamos os fatores de escala em (x,y,z) = (1/3,3/2,1). Na matiz Model modificamos basicamentos os parametros da matriz, em ponto flutuante de forma que a imagem 
@@ -142,7 +142,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 </p>
  
  
- ### Exercício 2  Translação
+ ### Exercício 2 Translação
  
  Transladar consiste em movimentar os vértices de um objeto adicionando quantidades às suas coordenadas, ou seja, cada ponto pode ser movido por d unidades ao 
  longo de cada eixo do sistema de coordenadas. 
@@ -163,7 +163,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
 	<br>
 </p>
  
- ### Exercício 3  Projeção Perspectiva
+ ### Exercício 3 Projeção Perspectiva
  
  Modificar a matriz MProjection, considera  a camera na origem do seu sistema de coordenadas. A matriz Projection fazendo com que objetos mais próximos da 
  câmera pareçam maiores e objetos mais distantes pareçam menores.
@@ -185,7 +185,7 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  
  
-### Exercício 4  Posição da Câmera
+### Exercício 4 Posição da Câmera
   
   Modificar a matriz MView
   
@@ -225,7 +225,7 @@ Em outras palavras, utilizando como parametro as posiçoes da camera contruimos 
   
  
  
- ### Exercício 5  Transformações Livres
+ ### Exercício 5 Transformações Livres
  
  Foi feito modificações nas  matrizes MModel,MView e MProjection onde forma a gerarem uma cena diferente das geradas anteriormente. Ou seja ajuste todas as posiçoes x para 3 nas três matrizes do codigo modelo. Ouve transformaçoes nas três matrizes!
  
