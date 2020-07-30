@@ -25,7 +25,7 @@ Alunas:
 	* [Exercício 1 Escala](#exercício-1-escala)
 	* [Exercício 2 Translação](#exercício-2-translação)
 	* [Exercício 3 Projeção Perspectiva](#exercício-3-projeção-perspectiva)
-	* [Exercício 4 Posição da Câmera](#exercício-4-posição-da-camêra)
+	* [Exercício 4 Posição da Camêra](#exercício-4-posição-da-camêra)
 	* [Exercício 5 Transformações Livres](#exercício-5-transformações-livres)
 * [Conclusão](#conclusão)
 * [Referências Bibliográficas](#referências-bibliográficas)
@@ -185,12 +185,9 @@ Como apontar a câmera para a cena, câmera define um novo sistema de coordenada
  
  
  
-### Exercício 4 Posição da Câmera
-  
-  Modificar a matriz MView
-  
-  Para a realização deste exercício, determinar inicialmente os vetores da base do espaço camera a partir das informaçoes constante Posição da camera = 
-  (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).
+### Exercício 4 Posição da Camêra
+
+Modificar a matriz MView para a realização deste exercício, determinar inicialmente os vetores da base do espaço camera a partir das informaçoes constante Posição da camera = (−110,110,14), vetor Up da camera = (0,1,0), ponto para o qual a caamera está apontando = (0,0,0).
   
  
  - Primeiro criamos três vetores glm como parametros da camera em relação ao posição, up e apontando. Depois usamos o metodo analize para as três eixos de cameras. Pegando a dica do porfessor, O vetor de direção da camera  foi  obtido subtraindo-se a posiçao da camera do ponto para o qual ela está apontando.
