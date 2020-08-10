@@ -51,7 +51,7 @@ $./shading_gl
 <p align="center">
 	<br>
 	<img src="./Imagens/figura4.1.png"/ width=720px height=400px>
-	<h5 align="center">Figura 1 - Disposição dos pixels na memória</h5>
+	<h5 align="center">Figura 1 - Resultado do codigo Template</h5>
 	<br>
 </p>
 
@@ -70,7 +70,7 @@ Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e nomain.cpp. Para
 <p align="center">
 	<br>
 	<img src="./Imagens/figura4.2.png"/ width=720px height=400px>
-	<h5 align="center">Figura 1 - : Renderização do Utah Teapot utilizando o modelo I = Iaκa +Ipκd cos θ (ambiente + difuso),onde Ia = (0.2, 0.2, 0.2), κa = (0, 0, 1), posição da fonte de luz igual a (−2, 2, 1.5), Ip = (0.8, 0.8, 0.8) e κd = (0, 0, 0.8).
+	<h5 align="center">Figura 3 - : Renderização do Utah Teapot utilizando o modelo I = Iaκa +Ipκd cos θ (ambiente + difuso),onde Ia = (0.2, 0.2, 0.2), κa = (0, 0, 1), posição da fonte de luz igual a (−2, 2, 1.5), Ip = (0.8, 0.8, 0.8) e κd = (0, 0, 0.8).
 	<br>
 </p>
 
@@ -80,7 +80,8 @@ Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e nomain.cpp. Para
 <p align="center">
 	<br>
 	<img src="./Imagens/figura4.3.png"/ width=720px height=400px>
-	<h5 align="center">Figura 1 - Disposição dos pixels na memória</h5>
+	<h5 align="center">Figura 3 -  Renderização do Utah Teapot utilizando o modelo I = Iaκa + Ip(κd cos θ + κs(cos α)n)
+(Phong), onde Ia = (0.2, 0.2, 0.2), κa = (0, 0, 1), posição da fonte de luz igual a (−2, 2, 1.5), Ip =(0.8, 0.8, 0.8), κd = (0, 0, 0.8), κs = (1, 1, 1) e n = 64.</h5>
 	<br>
 </p>
 
