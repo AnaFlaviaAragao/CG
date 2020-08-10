@@ -65,6 +65,8 @@ Nesta atividade modificamo o vertex shader (arquivo vertex_shader.glsl), disponi
 
 Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e no main.cpp. Para isto, foi necessario calcular os  cálculos dos vetores N e L, o modelo de iluminação difuso. Modificando assim o arquivo vertex_shader.glsl para adicionar estes passos, utilizandoas sugestões de cálculo dos dois vetores indicada pelo professor.
 
+Basicamente rescrevemos os calculos e para implementar a logica no cpp e mudamos parametros de acordo com que foi requisitado pela atividade.
+
 
 
 <p align="center">
@@ -77,6 +79,10 @@ Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e no main.cpp. Par
 
 ### Exercício 2: Implementação do Modelo de Reflexão Especular
 
+
+Modificar o vertex shader (arquivo vertex_shader.glsl) do exercício anterior de forma que ele passe a incluir, além do modelo de iluminação ambiente e difuso, também o modelo especular, ou de Phong. Para isto, será necessário calcular o vetor R, de reflexão da luz L, e o vetor da câmera V, que aponta
+do vértice em questão para a câmera. DE acordo com a sugestões de cálculo destes dois vetores, disponibilizado pelo professor.
+
 <p align="center">
 	<br>
 	<img src="./Imagens/figura44.png"/ width=720px height=400px>
@@ -88,7 +94,7 @@ Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e no main.cpp. Par
 
 ### Conclusão
 
-
+Neste projeto podemos colocar em prática os conceitos aplicado na sala de aula virtual, e implementando de forma pática os modelos de iluminação tradicionalmente utilizados na rasterização: ambiente, difuso e especular (ou Phong). Sendo necessario implementar os três modelos utilizando o vertex shader do OpenGL. O nivel de dificuldade foi razoavel, tendo em vista o fim de periodo com muitas atividades em execução em paralelo. Porém, foi muito proveitoso e desafiador esse periodo a distancia. Pois é uma nova realidade, algumas vezes com dificuldade e falhas na rede, por isso friso a importancia das aulas gravadas. Não mais, gostaria de dizer que foi muito proveitoso e agradeço pelas aulas e sua otima didatica. 
 
 ### Referências Bibliográficas
 
