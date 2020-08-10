@@ -60,10 +60,10 @@ $./shading_gl
 
 ### Exercício 1: Implementação do Modelo de Reflexão Difuso
 
-Nesta atividade modificamo o vertex shader (arquivo vertex_shader.glsl), disponibilizado pelo professor, de forma que ele passe a incluir, além do modelo de iluminação ambiente, também o modelo difuso. Para isto, será necessário calcular o novo valor do vetor normal N, após as transformações feitas pela matriz Model, bem como o vetor L que aponta do vértice para a fonte de luz.Utilizando a sugestões de cálculo destes dois vetores, definido pelo professor.
+Nesta atividade modificamo o vertex shader (arquivo vertex_shader.glsl), disponibilizado pelo professor, de forma que ele passe a incluir, além do modelo de iluminação ambiente, também o modelo difuso. Para isto, será necessário calcular o novo valor do vetor normal N, após as transformações feitas pela matriz Model, bem como o vetor L que aponta do vértice para a fonte de luz. Utilizando a sugestões de cálculo destes dois vetores, definido pelo professor.
 
 
-Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e nomain.cpp. Para isto, foi necessario calculars cálculos dos vetores N e L, o modelo de iluminação difuso. Modificando assim o arquivo vertex_shader.glsl para adicionar estes passos, utilizandoas sugestões de cálculo dos dois vetores indicada pelo professor.
+Foram feitas modificaçãoes nos arquivos, vertex_shader.glsl e no main.cpp. Para isto, foi necessario calcular os  cálculos dos vetores N e L, o modelo de iluminação difuso. Modificando assim o arquivo vertex_shader.glsl para adicionar estes passos, utilizandoas sugestões de cálculo dos dois vetores indicada pelo professor.
 
 
 
