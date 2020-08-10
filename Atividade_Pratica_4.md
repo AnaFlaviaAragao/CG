@@ -50,7 +50,7 @@ $./shading_gl
 
 <p align="center">
 	<br>
-	<img src="./Imagens/figura4.3.png"/ width=720px height=400px>
+	<img src="./Imagens/figuraA.png"/ width=720px height=400px>
 	<h5 align="center">Figura 1 - Resultado do codigo Template</h5>
 	<br>
 </p>
