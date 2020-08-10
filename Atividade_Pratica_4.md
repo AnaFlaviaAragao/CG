@@ -17,7 +17,7 @@ Alunas:
 
 * [Introdução](#introdução)
 * [Setup](#setup)
-* [A Atividade](#a-atividade)
+* [A Atividade](#atividade)
 	* [Exercício 1 Implementação do Modelo de Reflexão Difuso](#exercício-1-implementação-do-modelo-de-reflexão-difuso)
 	* [Exercício 2 Implementação do Modelo de Reflexão Especular](#exercício-2-implementação-do-modelo-de-reflexão-especular)
 * [Conclusão](#conclusão)
