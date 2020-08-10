@@ -56,7 +56,7 @@ $ ./cgprog
 
 <p align="center">
 	<br>
-	<img src="./Imagens/Figura1.png"/ width=720px height=400px>
+	<img src="./Imagens/nome_figura.png"/ width=720px height=400px>
 	<h5 align="center">Figura 1 - Disposição dos pixels na memória</h5>
 	<br>
 </p>
